@@ -12,14 +12,14 @@
       />
     </section>
     <section class="qr">
-      <router-link to="/about"><i class="fas fa-qrcode fa-2x"></i></router-link>
+      <router-link to="/qr"><i class="fas fa-qrcode fa-2x"></i></router-link>
     </section>
   </nav>
 </template>
 
 <script>
 export default {
-  name: "AppNavbar"
+  name: "AppNavbar",
 };
 </script>
 

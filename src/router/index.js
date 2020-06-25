@@ -13,34 +13,34 @@ const routes = [
     name: "Home",
     component: loadView("Home"),
     meta: {
-      title: "Home"
-    }
+      title: "Home",
+    },
   },
   {
-    path: "/about",
-    name: "About",
-    component: loadView("About"),
+    path: "/qr",
+    name: "QRcode",
+    component: loadView("qrcodeReader"),
     meta: {
-      title: "About"
-    }
+      title: "qrcodeReader",
+    },
   },
   {
     path: "*",
-    redirect: "/"
-  }
+    redirect: "/",
+  },
 ];
 
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
-  routes
+  routes,
 });
 
 router.beforeEach((to, from, next) => {
   const customTitle = to.matched
     .slice()
     .reverse()
-    .find(record => record.meta && record.meta.title);
+    .find((record) => record.meta && record.meta.title);
   document.title = `${customTitle ? customTitle.meta.title : ""}`;
   next();
 });
