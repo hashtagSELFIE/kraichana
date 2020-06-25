@@ -1,7 +1,6 @@
 <template>
-  <div class="container">
-    <h1 class="text-center">QRcode</h1>
-    <div class="reader">
+  <div class="qr">
+    <div class="reader" style="width:100%;height:calc(100vh - 52px)">
       <qrcode-stream @decode="onDecode"></qrcode-stream>
     </div>
     <h2 class="text-center">{{ msg }}</h2>
@@ -14,7 +13,7 @@ import { QrcodeStream } from "vue-qrcode-reader";
 export default {
   name: "qrcodeReader",
   components: {
-    QrcodeStream,
+    QrcodeStream
   },
   data() {
     return {
@@ -39,8 +38,8 @@ export default {
       } else {
         this.msg = "QRcode ไม่ถูกต้อง";
       }
-    },
-  },
+    }
+  }
 };
 </script>
 
