@@ -18,23 +18,26 @@ export default {
   },
   data() {
     return {
-      msg: "message",
-      appId: null,
-      shopId: null,
+      msg: "",
     };
   },
   methods: {
     onDecode(result) {
       console.log(result);
       if (result.indexOf("qr.thaichana.com") !== -1) {
-        this.msg = "qrcode ถูกต้อง";
+        this.msg = "QRcode ถูกต้อง";
+
         const url = new URL(result);
         const params = new URLSearchParams(url.search);
-        this.appId = params.get("appId");
-        this.shopId = params.get("shopId");
-        console.log(this.appId, this.shopId);
+        let appId = params.get("appId");
+        let shopId = params.get("shopId");
+
+        this.$store.dispatch("setDetail", {
+          appId: appId,
+          shopId: shopId,
+        });
       } else {
-        this.msg = "qrcode ไม่ถูกต้อง";
+        this.msg = "QRcode ไม่ถูกต้อง";
       }
     },
   },
