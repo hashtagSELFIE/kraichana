@@ -48,8 +48,8 @@ const store = new Vuex.Store({
     addHistory(state, value) {
       if (!state.shopHistory.length) state.shopHistory.unshift(value);
       else if (
-        state.shopHistory[0].appId !== value.appId ||
-        state.shopHistory[0].shopId !== value.shopId
+        `${state.shopHistory[0].appId}.${state.shopHistory[0].shopId}` !==
+        `${value.appId}.${value.shopId}`
       )
         state.shopHistory.unshift(value);
     },
@@ -58,7 +58,8 @@ const store = new Vuex.Store({
     },
     removeFavorite(state, value) {
       state.shopFavorite = state.shopFavorite.filter(
-        shop => shop.appId !== value.appId && shop.shopId !== value.shopId
+        shop =>
+          `${shop.appId}.${shop.shopId}` !== `${value.appId}.${value.shopId}`
       );
     }
   },
