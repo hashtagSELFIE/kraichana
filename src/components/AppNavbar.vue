@@ -4,16 +4,12 @@
       <router-link to="/"><i class="fas fa-home fa-2x"></i></router-link>
     </section>
     <section class="title">
-      <!-- will change to picture version -->
       <img
         class="img-fluid"
         style="height:36px"
-        src="@/assets/logo.png"
+        src="@/assets/logo_with_text.png"
         alt="ใครชนะ?"
       />
-      <div style="padding-top:8px;padding-left:8px">
-        ใครชนะ?
-      </div>
     </section>
     <section class="qr">
       <router-link to="/about"><i class="fas fa-qrcode fa-2x"></i></router-link>

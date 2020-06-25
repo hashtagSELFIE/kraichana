@@ -37,6 +37,10 @@ export default {
     url("assets/fonts/IBMPlexSansThai-Bold.woff") format("woff");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "IBM Plex Sans Thai", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
