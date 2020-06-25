@@ -46,4 +46,10 @@ body {
   letter-spacing: 0.1px;
   line-height: 1.7;
 }
+
+.img-fluid {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
 </style>

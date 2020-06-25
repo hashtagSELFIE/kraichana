@@ -4,7 +4,16 @@
       <router-link to="/"><i class="fas fa-home fa-2x"></i></router-link>
     </section>
     <section class="title">
-      ใครชนะ
+      <!-- will change to picture version -->
+      <img
+        class="img-fluid"
+        style="height:36px"
+        src="@/assets/logo.png"
+        alt="ใครชนะ?"
+      />
+      <div style="padding-top:8px;padding-left:8px">
+        ใครชนะ?
+      </div>
     </section>
     <section class="qr">
       <router-link to="/about"><i class="fas fa-qrcode fa-2x"></i></router-link>
@@ -32,10 +41,12 @@ export default {
   padding: 0 1rem;
 
   > .title {
-    text-align: center;
     flex: 1 1 0;
     font-size: 1.5rem;
     font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   > .home,
