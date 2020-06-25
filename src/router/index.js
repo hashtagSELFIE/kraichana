@@ -33,6 +33,22 @@ const routes = [
     }
   },
   {
+    path: "/history",
+    name: "ViewHistory",
+    component: loadView("ViewHistory"),
+    meta: {
+      title: "ประวัติการสแกน"
+    }
+  },
+  {
+    path: "/favorite",
+    name: "FavoriteList",
+    component: loadView("FavoriteList"),
+    meta: {
+      title: "แก้ไขรายการโปรด"
+    }
+  },
+  {
     path: "*",
     redirect: "/"
   }

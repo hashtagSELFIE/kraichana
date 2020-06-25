@@ -91,6 +91,7 @@ hr {
   padding: 14px 16px;
   border: 1px solid rgb(238, 238, 238);
   margin-bottom: 16px;
+  position: relative;
 
   &:hover {
     background-color: rgb(250, 255, 251);

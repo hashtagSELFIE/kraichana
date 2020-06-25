@@ -28,16 +28,18 @@
           </div>
         </div>
       </div>
-      <div class="list-item" style="text-align:center;font-size:1.25rem">
-        ดูเพิ่มเติม...
-      </div>
+      <router-link to="/history">
+        <div class="list-item" style="text-align:center;font-size:1.25rem">
+          ดูเพิ่มเติม...
+        </div>
+      </router-link>
     </section>
     <hr />
     <section>
       <div class="media center" style="margin-bottom:8px">
         <h1 class="body">รายการโปรด</h1>
         <div>
-          <router-link to="/history">
+          <router-link to="/favorite">
             <i class="fas fa-pen fa-2x"></i>
           </router-link>
         </div>
