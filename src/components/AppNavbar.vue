@@ -1,7 +1,9 @@
 <template>
   <nav class="main-navbar" role="navigation" aria-label="main navigation">
     <section class="home">
-      <router-link to="/"><i class="fas fa-home fa-2x"></i></router-link>
+      <router-link v-if="currentPath !== '/'" to="/"
+        ><i class="fas fa-home fa-2x"></i
+      ></router-link>
     </section>
     <section class="title">
       <img
@@ -12,7 +14,9 @@
       />
     </section>
     <section class="qr">
-      <router-link to="/qr"><i class="fas fa-qrcode fa-2x"></i></router-link>
+      <router-link v-if="currentPath !== '/' && currentPath !== '/qr'" to="/qr"
+        ><i class="fas fa-qrcode fa-2x"></i
+      ></router-link>
     </section>
   </nav>
 </template>
@@ -20,6 +24,12 @@
 <script>
 export default {
   name: "AppNavbar",
+  props: {
+    currentPath: {
+      type: String,
+      required: true
+    }
+  }
 };
 </script>
 
@@ -44,6 +54,14 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  > .home,
+  > .qr {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    bottom: -3px;
   }
 }
 </style>

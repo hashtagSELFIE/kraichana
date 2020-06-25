@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <app-navbar />
+    <app-navbar :currentPath="$route.path" />
     <router-view />
   </div>
 </template>
@@ -48,16 +48,12 @@ body {
   color: #444;
   letter-spacing: 0.1px;
   line-height: 1.7;
-  padding: 52px 20px 0;
+  padding-top: 52px;
 }
 
 a {
-  width: 36px;
-  height: 36px;
   color: #444;
   text-decoration: none;
-  position: relative;
-  bottom: -3px;
 }
 
 hr {
