@@ -13,8 +13,8 @@ const routes = [
     name: "Home",
     component: loadView("Home"),
     meta: {
-      title: "Home",
-    },
+      title: "หน้าหลัก"
+    }
   },
   {
     path: "/qr",
@@ -40,8 +40,8 @@ router.beforeEach((to, from, next) => {
   const customTitle = to.matched
     .slice()
     .reverse()
-    .find((record) => record.meta && record.meta.title);
-  document.title = `${customTitle ? customTitle.meta.title : ""}`;
+    .find(record => record.meta && record.meta.title);
+  document.title = `${customTitle ? customTitle.meta.title : ""} - ใครชนะ?`;
   next();
 });
 

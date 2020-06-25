@@ -35,6 +35,7 @@ export default {
   background: #fff;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   padding: 0 1rem;
+  z-index: 999;
 
   > .title {
     flex: 1 1 0;
@@ -43,18 +44,6 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  > .home,
-  > .qr {
-    > a {
-      width: 36px;
-      height: 36px;
-      color: #444;
-      text-decoration: none;
-      position: relative;
-      bottom: -3px;
-    }
   }
 }
 </style>

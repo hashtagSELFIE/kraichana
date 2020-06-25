@@ -45,15 +45,72 @@ body {
   font-family: "IBM Plex Sans Thai", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
-  padding-top: 52px;
   color: #444;
   letter-spacing: 0.1px;
   line-height: 1.7;
+  padding: 52px 20px 0;
+}
+
+a {
+  width: 36px;
+  height: 36px;
+  color: #444;
+  text-decoration: none;
+  position: relative;
+  bottom: -3px;
+}
+
+hr {
+  border: none;
+  border-top: 0.05rem solid #f1f3f5;
+  height: 0.05rem;
+  margin: 1.6rem 0 0.8rem;
+  display: block;
+  position: relative;
 }
 
 .img-fluid {
   display: block;
   height: auto;
   max-width: 100%;
+}
+
+// ---
+// CUSTOM COMPONENTS
+// ---
+
+// Large box item
+// Snipped: .list-item
+.list-item {
+  box-shadow: rgba(0, 0, 0, 0.03) 0px 0px 4px;
+  background-color: white;
+  cursor: pointer;
+  color: rgb(102, 102, 102);
+  padding: 14px 16px;
+  border: 1px solid rgb(238, 238, 238);
+  margin-bottom: 16px;
+
+  &:hover {
+    background-color: rgb(250, 255, 251);
+  }
+}
+
+// Horizontal layout where one element is spanning across and one are keep small
+// Snipped: .media>[any]+.body, .media>.body+[any]
+// .center,.bottom is the modifier for .media
+.media {
+  display: flex;
+
+  &.center {
+    align-items: center;
+  }
+
+  &.bottom {
+    align-items: flex-end;
+  }
+
+  > .body {
+    flex: 1 1 0;
+  }
 }
 </style>
