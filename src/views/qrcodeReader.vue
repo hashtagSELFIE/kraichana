@@ -17,7 +17,7 @@ export default {
   },
   data() {
     return {
-      msg: "",
+      msg: ""
     };
   },
   methods: {
@@ -33,7 +33,7 @@ export default {
 
         this.$store.dispatch("setDetail", {
           appId: appId,
-          shopId: shopId,
+          shopId: shopId
         });
       } else {
         this.msg = "QRcode ไม่ถูกต้อง";
