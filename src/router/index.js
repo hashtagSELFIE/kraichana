@@ -49,6 +49,14 @@ const routes = [
     }
   },
   {
+    path: "/shop_result",
+    name: "ShopResult",
+    component: loadView("ShopResult"),
+    meta: {
+      title: "เช็คอินแล้ว"
+    }
+  },
+  {
     path: "*",
     redirect: "/"
   }

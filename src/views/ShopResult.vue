@@ -7,13 +7,21 @@
           <div class="detail">
             <h2 class="alertText">เช็คอินแล้ว</h2>
             <div class="datetime">
-              <span>25 มิ.ย. 2563 เวลา </span>
-              <span class="time">23:09</span>
+              <span
+                >{{ currrent_time.getDate() }}
+                {{ MONTHS[currrent_time.getMonth()] }}
+                {{ currrent_time.getFullYear() + 543 }} เวลา
+              </span>
+              <span class="time"
+                >{{ formatNumber(currrent_time.getHours()) }}:{{
+                  formatNumber(currrent_time.getMinutes())
+                }}</span
+              >
               <span> น.</span>
             </div>
           </div>
           <div class="location">
-            <span>ฟิวเจอร์พาร์ค</span>
+            <span>{{ getDetail.shopName }}</span>
           </div>
         </div>
         <div class="whitespace"></div>
@@ -24,12 +32,41 @@
 
 <script>
 import AppLocationIcon from "@/components/AppLocationIcon";
+import storeGetter from "@/store/getter.js";
+const MONTHS = [
+  "ม.ค.",
+  "ก.พ.",
+  "มี.ค.",
+  "ม.ย.",
+  "พ.ค.",
+  "มิ.ย.",
+  "ก.ค.",
+  "ส.ค.",
+  "ก.ย.",
+  "ต.ค.",
+  "พ.ย.",
+  "ธ.ค."
+];
 
 export default {
   name: "ShopResult",
   components: {
-    AppLocationIcon,
+    AppLocationIcon
   },
+  data() {
+    return {
+      MONTHS,
+      currrent_time: new Date()
+    };
+  },
+  computed: {
+    ...storeGetter
+  },
+  methods: {
+    formatNumber(num) {
+      return (num < 10 ? "0" : "") + num;
+    }
+  }
 };
 </script>
 

@@ -3,40 +3,40 @@
     <section class="media center">
       <app-shopping-icon />
       <div class="body" style="margin-left:10px">
-        <h2>ดองกิ the market</h2>
-        <p>ร้านค้าปลีก/ค้าส่ง</p>
+        <h2>{{ getDetail.shopName }}</h2>
+        <p>{{ getDetail.businessType }}</p>
       </div>
     </section>
     <hr />
     กรุณาเลือกเช็คอิน หรือเช็คเอาท์
-    <div class="column">
-      <a
-        class="btn"
-        style="flex:1;margin-right:5px;justify-content:flex-start;
-    align-items:center;display:flex;flex-direction:column"
+    <div class="columns">
+      <router-link to="/shop_result" class="btn column">
+        <img class="img-fluid" src="../assets/checkin-icon.png" />
+        <div style="margin-top:8px">เช็คอิน</div>
+      </router-link>
+      <router-link
+        to="/shop_result"
+        class="btn column"
+        style="margin-left:16px"
       >
-        <img src="../assets/checkin-icon.png" height="120" width="120" />
-        <div>เช็คอิน</div>
-      </a>
-      <a
-        class="btn"
-        style="flex:1;margin-left:5px;
-    justify-content:flex-start;align-items:center;display:flex;flex-direction:column"
-      >
-        <img src="../assets/checkout-icon.png" height="120" width="120" />
-        <div>เช็คเอาท์</div>
-      </a>
+        <img class="img-fluid" src="../assets/checkout-icon.png" />
+        <div style="margin-top:8px">เช็คเอาท์</div>
+      </router-link>
     </div>
   </div>
 </template>
 
 <script>
 import AppShoppingIcon from "@/components/AppShoppingIcon";
+import storeGetter from "@/store/getter.js";
 
 export default {
   name: "ShopDetail",
   components: {
     AppShoppingIcon
+  },
+  computed: {
+    ...storeGetter
   }
 };
 </script>
@@ -55,17 +55,15 @@ export default {
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
   color: #287fe4;
-}
-
-.column {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   text-align: center;
 }
 
-img {
-  padding: 10px;
+.columns {
+  display: flex;
+  margin-top: 8px;
+}
+
+.column {
+  flex: 1 1 0;
 }
 </style>
