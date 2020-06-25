@@ -36,7 +36,7 @@ export default {
           shopId: shopId
         });
 
-        this.$router.push("/shopdetail");
+        this.$router.push("/shop_detail");
       } else {
         this.msg = "QRcode ไม่ถูกต้อง";
       }
