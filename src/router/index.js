@@ -17,15 +17,23 @@ const routes = [
     }
   },
   {
-    path: "*",
-    redirect: "/",
+    path: "/qr",
+    name: "QRcode",
+    component: loadView("qrcodeReader"),
+    meta: {
+      title: "QRCode Reader"
+    }
   },
+  {
+    path: "*",
+    redirect: "/"
+  }
 ];
 
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
-  routes,
+  routes
 });
 
 router.beforeEach((to, from, next) => {
