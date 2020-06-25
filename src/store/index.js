@@ -6,7 +6,9 @@ const KRAICHANA_STORAGE_NAME = "kraichana-store";
 
 const store = new Vuex.Store({
   state: {
-    shopDetail: null
+    shopDetail: null,
+    shopHistory: [],
+    shopFavorite: []
   },
   getters: {
     getDetail(state) {
@@ -16,6 +18,9 @@ const store = new Vuex.Store({
   mutations: {
     setShopDetail(state, value) {
       state.shopDetail = value;
+    },
+    addHistory(state, value) {
+      state.shopHistory.unshift(value);
     },
     initialiseStore(state) {
       // Check if the ID exists
@@ -33,6 +38,7 @@ const store = new Vuex.Store({
   actions: {
     setDetail(context, value) {
       context.commit("setShopDetail", value);
+      context.commit("addHistory", value);
     }
   },
   modules: {}

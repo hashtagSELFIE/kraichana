@@ -31,13 +31,14 @@ export default {
         const params = new URLSearchParams(url.search);
         let appId = params.get("appId");
         let shopId = params.get("shopId");
-
-        this.$store.dispatch("setDetail", {
-          appId: appId,
-          shopId: shopId
-        });
-
-        this.$router.push("/shop_detail");
+        fetch(`https://api-customer.thaichana.com/shop/${appId}/${shopId}/qr`)
+          .then(res => res.json())
+          .then(data => {
+            this.$store.dispatch("setDetail", data);
+            this.$router.push("/shop_detail");
+          })
+          // eslint-disable-next-line no-unused-vars
+          .catch(_ => (this.was_incorrect = true));
       } else {
         this.was_incorrect = true;
       }
