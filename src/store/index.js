@@ -8,7 +8,7 @@ const store = new Vuex.Store({
   state: {
     shopDetail: null,
     shopHistory: [],
-    shopFavorite: [],
+    shopFavorite: []
   },
   getters: {
     getDetail(state) {
@@ -19,7 +19,7 @@ const store = new Vuex.Store({
     },
     getHistory(state) {
       return state.shopHistory;
-    },
+    }
   },
   mutations: {
     setShopDetail(state, value) {
@@ -38,18 +38,21 @@ const store = new Vuex.Store({
       if (localStorage.getItem(KRAICHANA_STORAGE_NAME)) {
         // Replace the state object with the stored item
         this.replaceState(
-          Object.assign(state, JSON.parse(localStorage.getItem(KRAICHANA_STORAGE_NAME)))
+          Object.assign(
+            state,
+            JSON.parse(localStorage.getItem(KRAICHANA_STORAGE_NAME))
+          )
         );
       }
-    },
+    }
   },
   actions: {
     setDetail(context, value) {
       context.commit("setShopDetail", value);
       context.commit("addHistory", value);
-    },
+    }
   },
-  modules: {},
+  modules: {}
 });
 
 store.subscribe((mutation, state) => {

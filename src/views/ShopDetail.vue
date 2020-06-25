@@ -15,7 +15,7 @@
         <div style="margin-top:8px">เช็คอิน</div>
       </router-link>
       <router-link
-        to="/shop_result"
+        to="/shop_result_out"
         class="btn column"
         style="margin-left:16px"
       >
