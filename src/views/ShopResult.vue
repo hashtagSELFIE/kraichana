@@ -27,6 +27,16 @@
         <div class="whitespace"></div>
       </div>
     </div>
+    <div
+      v-if="
+        !getFavoriteMetadata.includes(`${getDetail.appId}.${getDetail.shopId}`)
+      "
+      class="list-item"
+      style="text-align:center;font-size:1.25rem;margin:8px 15px"
+      @click="addFavorite()"
+    >
+      <i class="fas fa-star"></i> เพิ่มในรายการโปรด
+    </div>
   </div>
 </template>
 
@@ -65,6 +75,9 @@ export default {
   methods: {
     formatNumber(num) {
       return (num < 10 ? "0" : "") + num;
+    },
+    addFavorite() {
+      this.$store.dispatch("saveFavorite", this.getDetail);
     }
   }
 };

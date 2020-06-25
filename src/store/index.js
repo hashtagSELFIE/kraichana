@@ -19,20 +19,17 @@ const store = new Vuex.Store({
     },
     getHistory(state) {
       return state.shopHistory;
+    },
+    getFavorite(state) {
+      return state.shopFavorite;
+    },
+    getFavoriteMetadata(state) {
+      return state.shopFavorite.map(
+        ({ shopId, appId }) => `${appId}.${shopId}`
+      );
     }
   },
   mutations: {
-    setShopDetail(state, value) {
-      state.shopDetail = value;
-    },
-    addHistory(state, value) {
-      if (!state.shopHistory.length) state.shopHistory.unshift(value);
-      else if (
-        state.shopHistory[0].appId !== value.appId ||
-        state.shopHistory[0].shopId !== value.shopId
-      )
-        state.shopHistory.unshift(value);
-    },
     initialiseStore(state) {
       // Check if the ID exists
       if (localStorage.getItem(KRAICHANA_STORAGE_NAME)) {
@@ -44,12 +41,37 @@ const store = new Vuex.Store({
           )
         );
       }
+    },
+    setShopDetail(state, value) {
+      state.shopDetail = value;
+    },
+    addHistory(state, value) {
+      if (!state.shopHistory.length) state.shopHistory.unshift(value);
+      else if (
+        state.shopHistory[0].appId !== value.appId ||
+        state.shopHistory[0].shopId !== value.shopId
+      )
+        state.shopHistory.unshift(value);
+    },
+    addFavorite(state, value) {
+      state.shopFavorite.unshift(value);
+    },
+    removeFavorite(state, value) {
+      state.shopFavorite = state.shopFavorite.filter(
+        shop => shop.appId !== value.appId && shop.shopId !== value.shopId
+      );
     }
   },
   actions: {
     setDetail(context, value) {
       context.commit("setShopDetail", value);
       context.commit("addHistory", value);
+    },
+    saveFavorite(context, value) {
+      context.commit("addFavorite", value);
+    },
+    deleteFavorite(context, value) {
+      context.commit("removeFavorite", value);
     }
   },
   modules: {}
