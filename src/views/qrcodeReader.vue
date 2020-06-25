@@ -11,7 +11,7 @@
 import { QrcodeStream } from "vue-qrcode-reader";
 
 export default {
-  name: "qrcodeReader",
+  name: "QRCodeReader",
   components: {
     QrcodeStream
   },
@@ -35,6 +35,8 @@ export default {
           appId: appId,
           shopId: shopId
         });
+
+        this.$router.push("/shopdetail");
       } else {
         this.msg = "QRcode ไม่ถูกต้อง";
       }

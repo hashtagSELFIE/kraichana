@@ -1,16 +1,12 @@
 <template>
   <div class="home">
-    <section style="margin:1.5rem 0">
-      <div class="media center">
-        <div class="body">
-          <h1>🙏 สวัสดีค่ะ</h1>
-          <p>กดแสกน QR Code ได้เลยค่ะ</p>
-        </div>
-        <div>
-          <router-link to="/qr"
-            ><i class="fas fa-qrcode fa-5x"></i
-          ></router-link>
-        </div>
+    <section class="media center" style="margin:1.5rem 0">
+      <div class="body">
+        <h1>🙏 สวัสดีค่ะ</h1>
+        <p>กดแสกน QR Code ได้เลยค่ะ</p>
+      </div>
+      <div>
+        <router-link to="/qr"><i class="fas fa-qrcode fa-5x"></i></router-link>
       </div>
     </section>
     <hr />
@@ -71,12 +67,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h1,
-h2,
-p {
-  margin: 0;
-}
-
 .home {
   margin-top: 2rem;
   padding: 0 20px;

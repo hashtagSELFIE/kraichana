@@ -51,6 +51,12 @@ body {
   padding-top: 52px;
 }
 
+h1,
+h2,
+p {
+  margin: 0;
+}
+
 a {
   color: #444;
   text-decoration: none;

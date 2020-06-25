@@ -19,9 +19,17 @@ const routes = [
   {
     path: "/qr",
     name: "QRcode",
-    component: loadView("qrcodeReader"),
+    component: loadView("QRCodeReader"),
     meta: {
       title: "QRCode Reader"
+    }
+  },
+  {
+    path: "/shop_detail",
+    name: "ShopDetail",
+    component: loadView("ShopDetail"),
+    meta: {
+      title: "ข้อมูลร้านค้า"
     }
   },
   {
