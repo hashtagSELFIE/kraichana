@@ -3,7 +3,7 @@
     <section class="media center" style="margin:1.5rem 0">
       <div class="body">
         <h1>🙏 สวัสดีค่ะ</h1>
-        <p>กดแสกน QR Code ได้เลยค่ะ</p>
+        <p>กดสแกน QR Code ได้เลยค่ะ</p>
       </div>
       <div>
         <router-link to="/qr"><i class="fas fa-qrcode fa-5x"></i></router-link>
