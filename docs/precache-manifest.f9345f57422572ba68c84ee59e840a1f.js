@@ -16,36 +16,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kraichana/browserconfig.xml"
   },
   {
-    "revision": "e37b7d83ae08fa6a94cf",
+    "revision": "db927b47618fe75b37f4",
     "url": "/kraichana/css/app.59272629.css"
   },
   {
-    "revision": "bf7217d7c0e819738935",
-    "url": "/kraichana/css/chunk-048daaf6.c6899372.css"
+    "revision": "ed886c3b63222d511064",
+    "url": "/kraichana/css/chunk-048daaf6.dd319835.css"
   },
   {
-    "revision": "85065573f373a6f945e7",
-    "url": "/kraichana/css/chunk-065b89ff.c1c4f605.css"
+    "revision": "1df32968246465d8d8e8",
+    "url": "/kraichana/css/chunk-065b89ff.1a1ea5c5.css"
   },
   {
     "revision": "9bb87d1f02014cd48170",
     "url": "/kraichana/css/chunk-0f914a84.6ad20ae2.css"
   },
   {
-    "revision": "4acba9f71b9495e608c4",
-    "url": "/kraichana/css/chunk-1a600a66.461846a3.css"
+    "revision": "9c6dbfa4b4af6b0946b6",
+    "url": "/kraichana/css/chunk-1a600a66.bb4b0829.css"
   },
   {
-    "revision": "5963094e2e7c325966cf",
-    "url": "/kraichana/css/chunk-1e795822.2d6c680f.css"
+    "revision": "ad08bef59e13df9c18db",
+    "url": "/kraichana/css/chunk-1e795822.ce980cc7.css"
   },
   {
-    "revision": "4a4c48b770247b891d0d",
-    "url": "/kraichana/css/chunk-a5f3fc28.fba3394a.css"
+    "revision": "bf2c128078087819a8e6",
+    "url": "/kraichana/css/chunk-a5f3fc28.f404b501.css"
   },
   {
-    "revision": "d5905ae9f0d7060784de",
-    "url": "/kraichana/css/chunk-a9c80a02.224c515b.css"
+    "revision": "705043bf043e64795025",
+    "url": "/kraichana/css/chunk-a9c80a02.41cde33e.css"
   },
   {
     "revision": "01b055e64e384fe792ba",
@@ -96,19 +96,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kraichana/img/logo_with_text.2fb35af1.png"
   },
   {
-    "revision": "1c38f2b73870cb98db09932817f1198f",
+    "revision": "1343a1b45dbd337a5429b76fc46b3e5c",
     "url": "/kraichana/index.html"
   },
   {
-    "revision": "e37b7d83ae08fa6a94cf",
-    "url": "/kraichana/js/app.d9ff5786.js"
+    "revision": "db927b47618fe75b37f4",
+    "url": "/kraichana/js/app.c14c050d.js"
   },
   {
-    "revision": "bf7217d7c0e819738935",
+    "revision": "ed886c3b63222d511064",
     "url": "/kraichana/js/chunk-048daaf6.08141766.js"
   },
   {
-    "revision": "85065573f373a6f945e7",
+    "revision": "1df32968246465d8d8e8",
     "url": "/kraichana/js/chunk-065b89ff.33ebebe8.js"
   },
   {
@@ -116,19 +116,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kraichana/js/chunk-0f914a84.e1b412c8.js"
   },
   {
-    "revision": "4acba9f71b9495e608c4",
+    "revision": "9c6dbfa4b4af6b0946b6",
     "url": "/kraichana/js/chunk-1a600a66.e18c1b45.js"
   },
   {
-    "revision": "5963094e2e7c325966cf",
+    "revision": "ad08bef59e13df9c18db",
     "url": "/kraichana/js/chunk-1e795822.b31adf9a.js"
   },
   {
-    "revision": "4a4c48b770247b891d0d",
+    "revision": "bf2c128078087819a8e6",
     "url": "/kraichana/js/chunk-a5f3fc28.49eccfdc.js"
   },
   {
-    "revision": "d5905ae9f0d7060784de",
+    "revision": "705043bf043e64795025",
     "url": "/kraichana/js/chunk-a9c80a02.b2431b16.js"
   },
   {
@@ -140,7 +140,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kraichana/js/chunk-vendors.7ef7edfc.js"
   },
   {
-    "revision": "c1c2958bcb4b5510f8550f601c215ea1",
+    "revision": "72c235faed6cdbd64a3e5b0460f9bb3d",
     "url": "/kraichana/manifest.json"
   },
   {
@@ -156,7 +156,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kraichana/safari-pinned-tab.svg"
   },
   {
-    "revision": "a9f88b10b68e8b88cfce1f0283efa0b4",
+    "revision": "f06469e96e07d3ac6e8f5c5d439c3124",
     "url": "/kraichana/site.webmanifest"
   }
 ]);
