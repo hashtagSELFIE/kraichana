@@ -6,7 +6,9 @@
         <p>กดสแกน QR Code ได้เลยค่ะ</p>
       </div>
       <div>
-        <router-link to="/qr"><i class="fas fa-qrcode fa-5x"></i></router-link>
+        <router-link to="/qr" aria-label="แสกน QR Code"
+          ><i class="fas fa-qrcode fa-5x"></i
+        ></router-link>
       </div>
     </section>
     <hr />
@@ -14,7 +16,7 @@
       <div class="media center" style="margin-bottom:8px">
         <h1 class="body">สถานที่ล่าสุด</h1>
         <div>
-          <router-link to="/history">
+          <router-link to="/history" aria-label="ประวัติสถานที่ทั้งหมด">
             <i class="fas fa-history fa-2x"></i>
           </router-link>
         </div>
@@ -45,7 +47,7 @@
       <div class="media center" style="margin-bottom:8px">
         <h1 class="body">รายการโปรด</h1>
         <div>
-          <router-link to="/favorite">
+          <router-link to="/favorite" aria-label="แก้ไขรายการโปรด">
             <i class="fas fa-pen fa-2x"></i>
           </router-link>
         </div>
