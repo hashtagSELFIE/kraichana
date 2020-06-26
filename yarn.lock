@@ -8090,6 +8090,11 @@ vue-loader@^15.9.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-qr@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/vue-qr/-/vue-qr-2.2.1.tgz#d7844e75d5223ef2ab192523cf8bb129d3b82489"
+  integrity sha512-IrYYrBlS5qR67xmXiFw0lmnn4NfXtuOSH5vuu6LpHN69+M2LB/6R6xYwUS3WT1LDpSpy6XZ6ex/kkOLlRJUWSw==
+
 vue-qrcode-reader@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/vue-qrcode-reader/-/vue-qrcode-reader-2.3.0.tgz#06dfe1c84b2c29b47fc2f948281703bceacddfcb"
