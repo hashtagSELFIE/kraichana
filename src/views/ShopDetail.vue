@@ -11,7 +11,11 @@
     กรุณาเลือกเช็คอิน หรือเช็คเอาท์
     <div class="columns">
       <router-link to="/shop_result" class="btn column">
-        <img class="img-fluid" src="../assets/checkin-icon.png" />
+        <img
+          class="img-fluid"
+          src="../assets/checkin-icon.png"
+          style="margin:auto"
+        />
         <div style="margin-top:8px">เช็คอิน</div>
       </router-link>
       <router-link
@@ -19,7 +23,11 @@
         class="btn column"
         style="margin-left:16px"
       >
-        <img class="img-fluid" src="../assets/checkout-icon.png" />
+        <img
+          class="img-fluid"
+          src="../assets/checkout-icon.png"
+          style="margin:auto"
+        />
         <div style="margin-top:8px">เช็คเอาท์</div>
       </router-link>
     </div>
