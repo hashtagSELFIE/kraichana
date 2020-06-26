@@ -16,40 +16,40 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kraichana/browserconfig.xml"
   },
   {
-    "revision": "db927b47618fe75b37f4",
-    "url": "/kraichana/css/app.59272629.css"
+    "revision": "100544385f08ec773867",
+    "url": "/kraichana/css/app.35c1b84d.css"
   },
   {
-    "revision": "ed886c3b63222d511064",
-    "url": "/kraichana/css/chunk-048daaf6.dd319835.css"
-  },
-  {
-    "revision": "1df32968246465d8d8e8",
-    "url": "/kraichana/css/chunk-065b89ff.1a1ea5c5.css"
+    "revision": "85065573f373a6f945e7",
+    "url": "/kraichana/css/chunk-065b89ff.c1c4f605.css"
   },
   {
     "revision": "9bb87d1f02014cd48170",
     "url": "/kraichana/css/chunk-0f914a84.6ad20ae2.css"
   },
   {
-    "revision": "9c6dbfa4b4af6b0946b6",
-    "url": "/kraichana/css/chunk-1a600a66.bb4b0829.css"
+    "revision": "35b068f3e29ae971908f",
+    "url": "/kraichana/css/chunk-1824c4ac.9a7f0328.css"
   },
   {
-    "revision": "ad08bef59e13df9c18db",
-    "url": "/kraichana/css/chunk-1e795822.ce980cc7.css"
+    "revision": "5963094e2e7c325966cf",
+    "url": "/kraichana/css/chunk-1e795822.2d6c680f.css"
   },
   {
-    "revision": "bf2c128078087819a8e6",
-    "url": "/kraichana/css/chunk-a5f3fc28.f404b501.css"
+    "revision": "97f3b10a7dcd88b1422d",
+    "url": "/kraichana/css/chunk-49f2d512.dba6ccb6.css"
   },
   {
-    "revision": "705043bf043e64795025",
-    "url": "/kraichana/css/chunk-a9c80a02.41cde33e.css"
+    "revision": "09787ca0207ab62c07fb",
+    "url": "/kraichana/css/chunk-68ce3660.19f55679.css"
   },
   {
-    "revision": "01b055e64e384fe792ba",
-    "url": "/kraichana/css/chunk-ff8e468a.b7af6e59.css"
+    "revision": "4a4c48b770247b891d0d",
+    "url": "/kraichana/css/chunk-a5f3fc28.fba3394a.css"
+  },
+  {
+    "revision": "d5905ae9f0d7060784de",
+    "url": "/kraichana/css/chunk-a9c80a02.224c515b.css"
   },
   {
     "revision": "661048c20f800e8e6e2f60bc8eb85765",
@@ -96,19 +96,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kraichana/img/logo_with_text.2fb35af1.png"
   },
   {
-    "revision": "1343a1b45dbd337a5429b76fc46b3e5c",
+    "revision": "60c423684717ec7bd62cfc1dacafd91a",
     "url": "/kraichana/index.html"
   },
   {
-    "revision": "db927b47618fe75b37f4",
-    "url": "/kraichana/js/app.c14c050d.js"
+    "revision": "100544385f08ec773867",
+    "url": "/kraichana/js/app.928d490a.js"
   },
   {
-    "revision": "ed886c3b63222d511064",
-    "url": "/kraichana/js/chunk-048daaf6.08141766.js"
-  },
-  {
-    "revision": "1df32968246465d8d8e8",
+    "revision": "85065573f373a6f945e7",
     "url": "/kraichana/js/chunk-065b89ff.33ebebe8.js"
   },
   {
@@ -116,24 +112,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kraichana/js/chunk-0f914a84.e1b412c8.js"
   },
   {
-    "revision": "9c6dbfa4b4af6b0946b6",
-    "url": "/kraichana/js/chunk-1a600a66.e18c1b45.js"
+    "revision": "35b068f3e29ae971908f",
+    "url": "/kraichana/js/chunk-1824c4ac.87eb1bc8.js"
   },
   {
-    "revision": "ad08bef59e13df9c18db",
+    "revision": "5963094e2e7c325966cf",
     "url": "/kraichana/js/chunk-1e795822.b31adf9a.js"
   },
   {
-    "revision": "bf2c128078087819a8e6",
+    "revision": "97f3b10a7dcd88b1422d",
+    "url": "/kraichana/js/chunk-49f2d512.af6b6065.js"
+  },
+  {
+    "revision": "09787ca0207ab62c07fb",
+    "url": "/kraichana/js/chunk-68ce3660.75406671.js"
+  },
+  {
+    "revision": "4a4c48b770247b891d0d",
     "url": "/kraichana/js/chunk-a5f3fc28.49eccfdc.js"
   },
   {
-    "revision": "705043bf043e64795025",
+    "revision": "d5905ae9f0d7060784de",
     "url": "/kraichana/js/chunk-a9c80a02.b2431b16.js"
-  },
-  {
-    "revision": "01b055e64e384fe792ba",
-    "url": "/kraichana/js/chunk-ff8e468a.5c4ebd03.js"
   },
   {
     "revision": "52f6f5f217ce5b61c8e9",
