@@ -1,6 +1,7 @@
 <template>
   <div class="view-history">
     <h1 style="margin-bottom:.4rem">ประวัติการสแกน</h1>
+    <app-empty-state v-if="!getHistory.length" name="ประวัติสถานที่" />
     <div
       v-for="(shop, index) in getHistory"
       :key="index"
@@ -20,12 +21,14 @@
 
 <script>
 import AppShoppingIcon from "@/components/AppShoppingIcon";
+import AppEmptyState from "@/components/AppEmptyState";
 import storeGetter from "@/store/getter.js";
 
 export default {
   name: "ViewHistory",
   components: {
-    AppShoppingIcon
+    AppShoppingIcon,
+    AppEmptyState
   },
   computed: {
     ...storeGetter

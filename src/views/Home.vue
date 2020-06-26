@@ -19,6 +19,7 @@
           </router-link>
         </div>
       </div>
+      <app-empty-state v-if="!getTopHistory.length" name="ประวัติสถานที่" />
       <div
         v-for="(shop, index) in getTopHistory"
         :key="index"
@@ -33,7 +34,7 @@
           </div>
         </div>
       </div>
-      <router-link to="/history">
+      <router-link v-if="getHistory.length > 3" to="/history">
         <div class="list-item" style="text-align:center;font-size:1.25rem">
           ดูเพิ่มเติม...
         </div>
@@ -49,6 +50,11 @@
           </router-link>
         </div>
       </div>
+      <app-empty-state
+        v-if="!getFavorite.length"
+        name="รายการโปรด"
+        description="ท่านสามารถเพิ่มสถานที่ลงในรายการโปรดได้หลังจากเช็คอินสถานที่นั้น"
+      />
       <div
         v-for="(shop, index) in getFavorite"
         :key="index"
@@ -69,12 +75,14 @@
 
 <script>
 import AppShoppingIcon from "@/components/AppShoppingIcon";
+import AppEmptyState from "@/components/AppEmptyState";
 import storeGetter from "@/store/getter.js";
 
 export default {
   name: "Home",
   components: {
-    AppShoppingIcon
+    AppShoppingIcon,
+    AppEmptyState
   },
   computed: {
     ...storeGetter
