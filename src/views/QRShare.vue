@@ -8,9 +8,8 @@
         :correctLevel="correctLevel"
         :size="size"
         :dotScale="dotScale"
-      ></vue-qr>
+      />
     </div>
-
     <div class="detail">
       <h2>{{ getDetail.shopName }}</h2>
       <p>{{ getDetail.businessType }}</p>
@@ -33,18 +32,18 @@ export default {
       text: null,
       correctLevel: 3,
       size: 280,
-      dotScale: 0.6,
+      dotScale: 0.6
     };
   },
   components: {
-    VueQr,
+    VueQr
   },
   computed: {
-    ...storeGetter,
+    ...storeGetter
   },
   created() {
     this.text = `https://qr.thaichana.com/?appId=${this.getDetail.appId}&shopId=${this.getDetail.shopId}`;
-  },
+  }
 };
 </script>
 

@@ -1,9 +1,9 @@
 <template>
   <nav class="main-navbar" role="navigation" aria-label="main navigation">
     <section class="home">
-      <router-link v-if="currentPath !== '/'" to="/"
-        ><i class="fas fa-home fa-2x"></i
-      ></router-link>
+      <a v-if="currentPath !== '/'" @click="$router.go(-1)"
+        ><i class="fas fa-arrow-left fa-2x"></i
+      ></a>
     </section>
     <section class="title">
       <img

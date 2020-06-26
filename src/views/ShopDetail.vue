@@ -31,6 +31,12 @@
         <div style="margin-top:8px">เช็คเอาท์</div>
       </router-link>
     </div>
+    <router-link
+      to="/shop_qr"
+      class="list-item"
+      style="display:block;margin-top:16px;text-align:center"
+      ><i class="fas fa-share-alt"></i> แชร์ QR ร้านปัจจุบัน</router-link
+    >
   </div>
 </template>
 

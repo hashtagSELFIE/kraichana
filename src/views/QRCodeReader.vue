@@ -34,7 +34,7 @@ export default {
           .then(res => res.json())
           .then(data => {
             this.$store.dispatch("setDetail", data);
-            this.$router.push("/shop_detail");
+            this.$router.replace("/shop_detail");
           })
           // eslint-disable-next-line no-unused-vars
           .catch(_ => (this.was_incorrect = true));

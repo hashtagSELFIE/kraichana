@@ -65,6 +65,14 @@ const routes = [
     }
   },
   {
+    path: "/shop_qr",
+    name: "QRShare",
+    component: loadView("QRShare"),
+    meta: {
+      title: "QRCode ร้าน"
+    }
+  },
+  {
     path: "*",
     redirect: "/"
   }
