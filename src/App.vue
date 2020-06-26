@@ -2,6 +2,13 @@
   <div id="app">
     <app-navbar :currentPath="$route.path" />
     <router-view />
+    <hr style="padding:0 20px" />
+    <footer style="padding:0 20px;font-size:80%;text-align:center">
+      เว็บไซต์ "ใครชนะ?" จัดทำขึ้นเพื่อการศึกษาเท่านั้น
+      <strong>ไม่มีส่วนเกี่ยวข้อง</strong>กับโครงการไทยชนะหรือเว็บไซต์
+      https://www.thaichana.com/ และ<strong>ไม่สามารถบันทึกข้อมูล</strong>ลงระบบ
+      ThaiChana ได้
+    </footer>
   </div>
 </template>
 
@@ -48,7 +55,7 @@ body {
   color: #444;
   letter-spacing: 0.1px;
   line-height: 1.7;
-  padding-top: 52px;
+  padding: 52px 0 16px;
 }
 
 h1,
