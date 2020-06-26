@@ -61,6 +61,9 @@ const store = new Vuex.Store({
         shop =>
           `${shop.appId}.${shop.shopId}` !== `${value.appId}.${value.shopId}`
       );
+    },
+    clearHistory(state) {
+      state.shopHistory = [];
     }
   },
   actions: {
@@ -73,6 +76,9 @@ const store = new Vuex.Store({
     },
     deleteFavorite(context, value) {
       context.commit("removeFavorite", value);
+    },
+    clearHistory(context) {
+      context.commit("clearHistory");
     }
   },
   modules: {}
