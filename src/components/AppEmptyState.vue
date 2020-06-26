@@ -8,6 +8,7 @@
 
 <script>
 export default {
+  name: "AppEmptyState",
   props: {
     name: {
       type: String,

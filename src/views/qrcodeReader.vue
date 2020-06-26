@@ -3,20 +3,19 @@
     <div class="reader" style="height:calc(100vh - 52px)">
       <qrcode-stream @decode="onDecode"></qrcode-stream>
     </div>
-    <div v-if="was_incorrect" class="toast-overlay">
-      <i class="fas fa-exclamation-triangle"></i> QR Code ไม่ถูกต้อง
-      กรุณาลองใหม่
-    </div>
+    <app-toast v-if="was_incorrect" msg="QR Code ไม่ถูกต้อง" />
   </div>
 </template>
 
 <script>
 import { QrcodeStream } from "vue-qrcode-reader";
+import AppToast from "@/components/AppToast";
 
 export default {
   name: "QRCodeReader",
   components: {
-    QrcodeStream
+    QrcodeStream,
+    AppToast
   },
   data() {
     return {
@@ -46,33 +45,9 @@ export default {
   },
   watch: {
     was_incorrect() {
-      setTimeout(() => (this.was_incorrect = false), 5000);
+      if (this.was_incorrect)
+        setTimeout(() => (this.was_incorrect = false), 5000);
     }
   }
 };
 </script>
-
-<style lang="scss" scoped>
-@keyframes slide_in {
-  0% {
-    bottom: -64px;
-  }
-  to {
-    bottom: 4px;
-  }
-}
-
-.toast-overlay {
-  position: fixed;
-  bottom: 4px;
-  left: 4px;
-  right: 4px;
-  color: #856404;
-  background-color: #fff3cd;
-  border-color: #ffeeba;
-  padding: 0.75rem 1.25rem;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-  animation: slide_in 0.5s forwards;
-}
-</style>

@@ -37,11 +37,18 @@
     >
       <i class="fas fa-star"></i> เพิ่มในรายการโปรด
     </div>
+    <app-toast
+      v-if="was_favorited"
+      msg="เพิ่มลงในรายการโปรดแล้ว!"
+      icon="fa-star"
+      type="success"
+    />
   </div>
 </template>
 
 <script>
 import AppLocationIcon from "@/components/AppLocationIcon";
+import AppToast from "@/components/AppToast";
 import storeGetter from "@/store/getter.js";
 const MONTHS = [
   "ม.ค.",
@@ -61,12 +68,14 @@ const MONTHS = [
 export default {
   name: "ShopResult",
   components: {
-    AppLocationIcon
+    AppLocationIcon,
+    AppToast
   },
   data() {
     return {
       MONTHS,
-      currrent_time: new Date()
+      currrent_time: new Date(),
+      was_favorited: false
     };
   },
   computed: {
@@ -77,7 +86,14 @@ export default {
       return (num < 10 ? "0" : "") + num;
     },
     addFavorite() {
+      this.was_favorited = true;
       this.$store.dispatch("saveFavorite", this.getDetail);
+    }
+  },
+  watch: {
+    was_favorited() {
+      if (this.was_favorited)
+        setTimeout(() => (this.was_favorited = false), 5000);
     }
   }
 };
