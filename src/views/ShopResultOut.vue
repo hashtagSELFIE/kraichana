@@ -23,6 +23,9 @@
           <div class="location">
             <span>{{ getDetail.shopName }}</span>
           </div>
+          <div class="location" style="font-size:1.1rem;font-weight:700">
+            อย่าลืมล้างมือด้วยนะคะ 🧼
+          </div>
         </div>
         <div class="whitespace"></div>
       </div>
